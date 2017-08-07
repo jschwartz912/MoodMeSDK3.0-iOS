@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iris" translatesAutoresizingMaskIntoConstraints="NO" id="R4t-Cn-Qyp">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="LOn-zd-UZp"/>
+                        <constraint firstAttribute="height" constant="300" id="rly-WK-3Lq"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="LOn-zd-UZp"/>
+                            <exclude reference="rly-WK-3Lq"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015-2016 MoodMe. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                    <rect key="frame" x="20" y="439" width="441" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MoodMe SDK Demo" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uT-WM-Z1g">
+                    <rect key="frame" x="38" y="150" width="405" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="405" id="1Vi-fm-utW"/>
+                        <constraint firstAttribute="height" constant="180" id="xio-xi-D92"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7uT-WM-Z1g" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Efz-Q4-cyp"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
+                <constraint firstItem="7uT-WM-Z1g" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PgQ-ov-xuA"/>
+                <constraint firstAttribute="centerY" secondItem="R4t-Cn-Qyp" secondAttribute="centerY" id="Wt7-rt-seM"/>
+                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
+                <constraint firstAttribute="bottom" secondItem="R4t-Cn-Qyp" secondAttribute="bottom" id="dDc-Vb-PSg"/>
+                <constraint firstItem="R4t-Cn-Qyp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gIs-tq-cxc"/>
+                <constraint firstItem="R4t-Cn-Qyp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jnD-xf-hWo"/>
+                <constraint firstAttribute="centerX" secondItem="R4t-Cn-Qyp" secondAttribute="centerX" id="nWO-wu-pAW"/>
+                <constraint firstAttribute="trailing" secondItem="R4t-Cn-Qyp" secondAttribute="trailing" id="tLS-SR-Wwq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Wt7-rt-seM"/>
+                    <exclude reference="nWO-wu-pAW"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iris" width="750" height="1334"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module MoodMeSDK {
+    umbrella header "SDK.h"
+    
+    export *
+    module * { export * }
+}

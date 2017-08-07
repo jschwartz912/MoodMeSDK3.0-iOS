@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BIW-7Q-goF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="YDS-Bq-urL">
+            <objects>
+                <viewController id="BIW-7Q-goF" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="feB-Rq-0Js"/>
+                        <viewControllerLayoutGuide type="bottom" id="9uV-kU-34h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TSf-Tt-7th">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GrE-jb-ozS">
+                                <rect key="frame" x="0.0" y="90" width="375" height="458.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GrE-jb-ozS" secondAttribute="height" multiplier="9:11" id="VHf-1J-ExA"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="L53-ji-Dgn" kind="embed" identifier="GLViewController" id="AuA-ZO-jWS"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcp-by-RLU">
+                                <rect key="frame" x="184" y="28" width="160" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="ZBC-Gt-kyt"/>
+                                    <constraint firstAttribute="height" constant="32" id="vCQ-Or-Z0o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double Tap on Video to Reset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3n-vf-y7q">
+                                <rect key="frame" x="62.5" y="609" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4lk-a8-Gmt"/>
+                                    <constraint firstAttribute="width" constant="250" id="qHr-mz-sEW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lja-Sk-8K4">
+                                <rect key="frame" x="31" y="116" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="9l7-wq-mIl"/>
+                                    <constraint firstAttribute="width" constant="49" id="oCd-J1-lud"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="useCLM2:" destination="BIW-7Q-goF" eventType="valueChanged" id="t8i-kv-FK4"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g3n-vf-y7q" firstAttribute="centerX" secondItem="TSf-Tt-7th" secondAttribute="centerX" id="3FF-Xf-oOs"/>
+                            <constraint firstAttribute="bottom" secondItem="GrE-jb-ozS" secondAttribute="bottom" id="Kgk-as-kCv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pcp-by-RLU" secondAttribute="trailing" constant="15" id="L6M-jk-Xdb"/>
+                            <constraint firstItem="Lja-Sk-8K4" firstAttribute="top" secondItem="feB-Rq-0Js" secondAttribute="bottom" constant="96" id="MKJ-H2-NqE"/>
+                            <constraint firstItem="Pcp-by-RLU" firstAttribute="top" secondItem="feB-Rq-0Js" secondAttribute="bottom" constant="8" id="NUK-Vo-SdL"/>
+                            <constraint firstItem="GrE-jb-ozS" firstAttribute="leading" secondItem="TSf-Tt-7th" secondAttribute="leading" id="fzS-sf-5sO"/>
+                            <constraint firstItem="9uV-kU-34h" firstAttribute="top" secondItem="g3n-vf-y7q" secondAttribute="bottom" constant="37" id="jh7-Yb-f4P"/>
+                            <constraint firstItem="Lja-Sk-8K4" firstAttribute="leading" secondItem="TSf-Tt-7th" secondAttribute="leadingMargin" constant="15" id="pNt-YN-bB0"/>
+                            <constraint firstItem="GrE-jb-ozS" firstAttribute="top" secondItem="TSf-Tt-7th" secondAttribute="top" constant="90" id="uRI-ll-VfW"/>
+                            <constraint firstAttribute="trailing" secondItem="GrE-jb-ozS" secondAttribute="trailing" id="ucI-RP-nat"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Kgk-as-kCv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="fpsLabel" destination="Pcp-by-RLU" id="c5G-ee-mKI"/>
+                        <outlet property="glView" destination="GrE-jb-ozS" id="qRM-UY-nfc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvk-8V-00v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="765.96701649175418"/>
+        </scene>
+        <!--CamXGL View Controller-->
+        <scene sceneID="bt5-L5-PZb">
+            <objects>
+                <viewController id="L53-ji-Dgn" customClass="CamXGLViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FNc-8N-6rl"/>
+                        <viewControllerLayoutGuide type="bottom" id="GS0-Kq-dGx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FPL-z0-kQe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="458.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <glkView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" drawableDepthFormat="16" enableSetNeedsDisplay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrJ-0e-Rvk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="458.5"/>
+                            </glkView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KrJ-0e-Rvk" firstAttribute="leading" secondItem="FPL-z0-kQe" secondAttribute="leading" id="TzD-z6-0Ik"/>
+                            <constraint firstItem="KrJ-0e-Rvk" firstAttribute="top" secondItem="FNc-8N-6rl" secondAttribute="bottom" id="Xfo-ih-PrP"/>
+                            <constraint firstItem="GS0-Kq-dGx" firstAttribute="top" secondItem="KrJ-0e-Rvk" secondAttribute="bottom" id="iQs-kS-Bw4"/>
+                            <constraint firstAttribute="trailing" secondItem="KrJ-0e-Rvk" secondAttribute="trailing" id="qi6-pT-aVc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="glkView" destination="KrJ-0e-Rvk" id="ya1-rg-W9x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZ6-pv-oA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="766"/>
+        </scene>
+    </scenes>
+</document>
